@@ -71,9 +71,4 @@ with st.form(key='data_form'):
 
         st.success("Data saved successfully!")
 
-# Button to display data from the database
-if st.button("Show Data"):
-    conn = create_connection()
-    df = pd.read_sql_query("SELECT * FROM users", conn)
-    conn.close()
-    st.dataframe(df)
+
