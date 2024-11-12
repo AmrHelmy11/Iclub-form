@@ -63,7 +63,7 @@ with st.form(key='data_form'):
 
     if submit_button:
         # Insert the data into the database
-        insert_data(name, phone number, id, faculty, year, email)
+        insert_data(name, phone_number, id, faculty, year, email)
 
         # Create a DataFrame from the input data
         data = pd.DataFrame({
