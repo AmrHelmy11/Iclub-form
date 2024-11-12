@@ -27,7 +27,7 @@ def create_table():
     conn.close()
 
 # Function to insert data into the database
-def insert_data(name, phone number, id, faculty, year, email):
+def insert_data(name, phone_number, id, faculty, year, email):
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('INSERT INTO users (name, phone number, id, faculty, year, email) VALUES (?, ?, ?, ?, ?, ?)', (name, phone number, id, faculty, year, email))
