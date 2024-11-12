@@ -30,7 +30,7 @@ def create_table():
 def insert_data(name, phone_number, id, faculty, year, email):
     conn = create_connection()
     cursor = conn.cursor()
-    cursor.execute('INSERT INTO users (name, phone number, id, faculty, year, email) VALUES (?, ?, ?, ?, ?, ?)', (name, phone number, id, faculty, year, email))
+    cursor.execute('INSERT INTO users (name, phone_number, id, faculty, year, email) VALUES (?, ?, ?, ?, ?, ?)', (name, phone_number, id, faculty, year, email))
     conn.commit()
     conn.close()
 
